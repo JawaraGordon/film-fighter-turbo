@@ -70,3 +70,4 @@ In the future I will deploy this app as a fully playable game where you are able
 ### Attribution
 
 The original source code and concept of this application was created by Stephen Grider for The Modern Javascript Bootcamp course 2022 on Udemy.
+Testing, refactoring, and styling changes were added.
