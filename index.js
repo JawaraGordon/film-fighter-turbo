@@ -1,8 +1,7 @@
-// NEVER expose your API to a public repo!
+// NEVER expose your API key to a public repo!
 const OMDB_API_KEY = '<your API key>';
 
 const autoCompleteConfig = {
-  
   renderOption(movie) {
     const imgSrc = movie.Poster === 'N/A' ? '' : movie.Poster;
     return `
