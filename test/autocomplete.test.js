@@ -1,4 +1,5 @@
-it('Shows and autocomplete', () => {
+beforeEach(() => {
+  document.querySelector('#target').innerHTML = '';
   createAutoComplete({
     root: document.querySelector('#target'),
     fetchData() {
@@ -13,3 +14,11 @@ it('Shows and autocomplete', () => {
     },
   });
 });
+
+it('Shows an autocomplete', () => {
+  const dropdown = document.querySelector('.dropdown');
+  //   using chai to handle assertions
+  expect(dropdown.className).not.to.include('is-active');
+});
+
+it('After search, dropdown opens', () => {});

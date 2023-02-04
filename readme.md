@@ -63,7 +63,7 @@ http://127.0.0.1:5501/index.html
 • Conditional comparison logic
 • Testing in the browser with Mocha
 
-### What I Wat to Add
+### What I Want to Add
 
 In the future I will deploy this app as a fully playable game where you are able to choose a film to act as a character while fighting your way to the top in a king of the hill style arcade experience
 
