@@ -50,3 +50,15 @@ it('After search, dropdown opens', async () => {
   const dropdown = document.querySelector('.dropdown');
   expect(dropdown.className).to.include('is-active');
 });
+
+it('After searching, displays results', async () => {
+  const input = document.querySelector('input');
+  input.value = 'Test Movie';
+  input.dispatchEvent(new Event('input'));
+
+  // pausing test to wait for debounce
+  await waitFor('.dropdown-item');
+
+  const items = document.querySelectorAll('.dropdown-item');
+  expect(items.length).to.equal(3);
+});
